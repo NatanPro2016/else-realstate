@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 99vw;
+    background-color: #fff;
+   
+}
+.main{
+    width: 1400px;
+    position: relative;
+
+}
+
+header{
+    width: 1380px;
+    height: 60px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    z-index: 20;
+    background: #001528;
+    color: #ececec;
+    margin: 20px 10px;
+    border-radius: 7px;
+}
+.h1{
+    background:linear-gradient(90deg, #00c6fb, #005bea);
+
+
+}
+.h1 h1{
+    mix-blend-mode: multiply;
+    color: #fff;
+    background: #2b2b2b;
+   
+ 
+}
+ul{
+    list-style: none;
+    display:flex;
+}
+li a{
+    color: #f4f4f4;
+    text-decoration:none;
+    margin: 20px;
+}
+
+.home{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 20px;
+    background: url('../img/house-1836070_1280.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    color: #fff;
+}
+.home::after{
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, #151515ef,#ffffff00);
+    right: 0;
+    top:0;
+
+
+}
+.home .content{
+    width: 500px;
+    z-index: 2;
+}
+.home .content h1{
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+.home .content p{
+    margin-bottom: 40px;
+}
+.btn{
+    background: linear-gradient(90deg, #00c6fb,#005bea);
+    padding: 9px 35px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+   
+}
+
+.cards{
+    display: flex;
+    padding: 20px;
+    height: 250px;
+    align-items:center;
+}
+.card{
+    width: 33%;
+    text-align: center;
+   
+}
+.revel-element, .revel-element2, .revel-element3 {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all ease 2s;
+}
+.active{
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all ease 2s;
+
+}
+.card svg{
+    height: 30px;
+  
+}
+
+
+
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 500px;
+}
+.page img{
+    width: 650px;
+    border-radius: 7px;
+    box-shadow: 0 0 40px 15px rgba(0, 0, 0, 0.155);
+}
+.page .content{
+    width: 650px;
+    margin: 40px;
+
+}
+.page .content h1{
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+.page .content p{
+    margin-bottom: 40px;
+}
+footer{
+    height: 200px;
+    background:url('../img/house-1836070.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    position:relative;
+}
+footer::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #0000005b;
+
+}
