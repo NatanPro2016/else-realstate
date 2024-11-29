@@ -1,189 +1,186 @@
-:root{
-    --pirmary : #005bea;
-    --secondry: #00c6fb;
-    --background: #001528;
-    --forgroound:#fff;
+:root {
+  --pirmary: #005bea;
+  --secondry: #00c6fb;
+  --background: #001528;
+  --forgroound: #fff;
 
-    --heading-1 : 80px;
-
+  --heading-1: 80px;
 }
 
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
-body{
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    width: 99vw;
-    background-color: #fff;
-   
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 99vw;
+  background-color: #fff;
 }
-.main{
-    max-width: 1400px;
-    width: 100%;
-    position: relative;
-
+.main {
+  max-width: 1400px;
+  width: 100%;
+  position: relative;
 }
 
-header{
-    max-width: 1400px;
+header {
+  max-width: 1400px;
 
-    width:100%;
-    height: 60px;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    padding: 20px;
-    position: fixed;
-    z-index: 20;
-    background: var(--background);
-    color: var(--forgroound);
- 
-
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  z-index: 20;
+  background: var(--background);
+  color: var(--forgroound);
 }
-.h1{
-    background:linear-gradient(90deg, var(--pirmary), var(--secondry));
-
-
+.h1 {
+  background: linear-gradient(90deg, var(--pirmary), var(--secondry));
 }
-.h1 h1{
-    mix-blend-mode: multiply;
-    color: #fff;
-    background: var(--background);
-   
- 
+.h1 h1 {
+  mix-blend-mode: multiply;
+  color: #fff;
+  background: var(--background);
 }
-ul{
-    list-style: none;
-    display:flex;
+ul {
+  list-style: none;
+  display: flex;
 }
-li a{
-    color: var(--forgroound);
-    text-decoration:none;
-    margin: 20px;
+li a {
+  color: var(--forgroound);
+  text-decoration: none;
+  margin: 20px;
 }
 
-.home{
-    width: 100%;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    padding: 20px;
-    background: url('../img/house-1836070_1280.jpg');
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    background-attachment: fixed;
-    color: var(--forgroound);
+.home {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 20px;
+  background: url("../img/house-1836070_1280.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  color: var(--forgroound);
 }
-.home::after{
-    content:"";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(90deg, #151515ef,#ffffff00);
-    right: 0;
-    top:0;
-
-
+.home::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #151515ef, #ffffff00);
+  right: 0;
+  top: 0;
 }
-.home .content{
-   max-width: 800px;
-    z-index: 2;
+.home .content {
+  max-width: 800px;
+  z-index: 2;
 }
-.home .content h1{
-    font-size: var(--heading-1);
-    margin-bottom: 20px;
+.home .content h1 {
+  font-size: var(--heading-1);
+  margin-bottom: 20px;
 }
-.home .content p{
-    margin-bottom: 40px;
+.home .content p {
+  margin-bottom: 40px;
 }
-.btn{
-    background: linear-gradient(90deg, #00c6fb,#005bea);
-    padding: 9px 35px;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-   
+.btn {
+  background: linear-gradient(90deg, #00c6fb, #005bea);
+  padding: 9px 35px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
 }
 
-.cards{
-    display: flex;
-    padding: 20px;
-    height: 250px;
-    align-items:center;
+.cards {
+  display: flex;
+  padding: 20px;
+  height: 250px;
+  align-items: center;
 }
-.card{
-    width: 33%;
-    text-align: center;
-   
+.card {
+  width: 33%;
+  text-align: center;
 }
-.revel-element, .revel-element2, .revel-element3 {
-    transform: translateY(150px);
-    opacity: 0;
-    transition: all ease 2s;
+.revel-element,
+.revel-element2,
+.revel-element3 {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all ease 2s;
 }
-.active{
-    transform: translateY(0px);
-    opacity: 1;
-    transition: all ease 2s;
-
+.active {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: all ease 2s;
 }
-.card svg{
-    height: 30px;
-  
+.card svg {
+  height: 30px;
 }
-
-
 
 .page {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  min-height: 500px;
 }
-.page img{
-    width: 650px;
-    border-radius: 7px;
-    box-shadow: 0 0 40px 15px rgba(0, 0, 0, 0.155);
+.page img {
+  max-width: 650px;
+  width: 100%;
+  border-radius: 7px;
+  box-shadow: 0 0 40px 15px rgba(0, 0, 0, 0.155);
 }
-.page .content{
-    width: 650px;
-    margin: 40px;
+.page .content {
+  max-width: 650px;
+  width: 100%;
+  margin: 40px;
+}
+.page .content h1 {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+.page .content p {
+  margin-bottom: 40px;
+}
+footer {
+  height: 200px;
+  background: url("../img/house-1836070.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+footer::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #0000005b;
+}
+@media (max-width: 630px) {
+  :root {
+    --heading-1: 50px;
+  }
+  .page{
+    flex-direction: column;
 
-}
-.page .content h1{
-    font-size: 80px;
-    margin-bottom: 20px;
-}
-.page .content p{
-    margin-bottom: 40px;
-}
-footer{
-    height: 200px;
-    background:url('../img/house-1836070.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: bottom;
-    position:relative;
-}
-footer::after{
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: #0000005b;
-
+  }
+  .cards{
+    flex-direction: column;
+  }
+  .card{
+    width: 80%;
+  }
 }
