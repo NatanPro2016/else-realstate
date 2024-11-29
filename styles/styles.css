@@ -1,9 +1,22 @@
+:root{
+    --pirmary : #005bea;
+    --secondry: #00c6fb;
+    --background: #001528;
+    --forgroound:#fff;
+
+    --heading-1 : 80px;
+
+}
+
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
 
 body{
     display: flex;
@@ -14,13 +27,16 @@ body{
    
 }
 .main{
-    width: 1400px;
+    max-width: 1400px;
+    width: 100%;
     position: relative;
 
 }
 
 header{
-    width: 1380px;
+    max-width: 1400px;
+
+    width:100%;
     height: 60px;
     display: flex;
     justify-content:space-between;
@@ -28,20 +44,20 @@ header{
     padding: 20px;
     position: fixed;
     z-index: 20;
-    background: #001528;
-    color: #ececec;
-    margin: 20px 10px;
-    border-radius: 7px;
+    background: var(--background);
+    color: var(--forgroound);
+ 
+
 }
 .h1{
-    background:linear-gradient(90deg, #00c6fb, #005bea);
+    background:linear-gradient(90deg, var(--pirmary), var(--secondry));
 
 
 }
 .h1 h1{
     mix-blend-mode: multiply;
     color: #fff;
-    background: #2b2b2b;
+    background: var(--background);
    
  
 }
@@ -50,7 +66,7 @@ ul{
     display:flex;
 }
 li a{
-    color: #f4f4f4;
+    color: var(--forgroound);
     text-decoration:none;
     margin: 20px;
 }
@@ -68,7 +84,7 @@ li a{
     background-size: cover;
     position: relative;
     background-attachment: fixed;
-    color: #fff;
+    color: var(--forgroound);
 }
 .home::after{
     content:"";
@@ -82,11 +98,11 @@ li a{
 
 }
 .home .content{
-    width: 500px;
+   max-width: 800px;
     z-index: 2;
 }
 .home .content h1{
-    font-size: 80px;
+    font-size: var(--heading-1);
     margin-bottom: 20px;
 }
 .home .content p{
